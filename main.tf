@@ -5,6 +5,9 @@ resource "aws_vpc" "main" {
   tags = merge(var.tags, {Name = "${var.env}-vpc"})
 }
 
+
+
+
 module "subnets" {
   source = "./subnets"
 
