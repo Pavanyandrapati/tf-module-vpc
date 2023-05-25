@@ -19,6 +19,3 @@ resource "aws_route_table_association" "associate" {
   route_table_id = aws_route_table.main[count.index].id
 }
 
-output "subnets" {
-  value = module.subnets
-}
